@@ -62,17 +62,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: 30
+    marginTop: 30,
+    justifyContent: 'flex-end',
+    alignItems: 'center'
   },
   button: {
     width: 100,
     height: 50,
     backgroundColor: 'black',
     paddingTop: 15,
-    paddingBottom: 3
+    paddingBottom: 3,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   buttonText: {
     color: 'white',
-    textAlign: 'center'
   }
 });
