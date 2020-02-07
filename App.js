@@ -4,7 +4,7 @@ import * as Font from 'expo-font';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-
+import Constants from 'expo-constants';
 import AppNavigator from './navigation/AppNavigator';
 
 export default function App(props) {
@@ -62,20 +62,21 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: 30,
+    marginTop: Constants.marginTop,
+    marginBottom: Constants.statusBarHeight,
     justifyContent: 'flex-end',
     alignItems: 'center'
   },
   button: {
     width: 100,
     height: 50,
+    borderRadius: 5,
     backgroundColor: 'black',
-    paddingTop: 15,
-    paddingBottom: 3,
     justifyContent: 'center',
     alignItems: 'center'
   },
   buttonText: {
     color: 'white',
+    fontSize: 18
   }
 });
