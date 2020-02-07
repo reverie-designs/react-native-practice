@@ -23,8 +23,8 @@ export default function App(props) {
       <View style={styles.container}>
         {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
         <Text>Hello World of Amazing Puppies</Text>
-        <TouchableOpacity onPress={()=>{alert('hello')}}>
-          <Text>Click Here</Text>
+        <TouchableOpacity style={styles.button} onPress={()=>{alert('hello')}}>
+          <Text style={styles.buttonText} >Click Here</Text>
         </TouchableOpacity>
         {/* <AppNavigator /> */}
       </View>
@@ -64,4 +64,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     marginTop: 30
   },
+  button: {
+    width: 100,
+    height: 50,
+    backgroundColor: 'black',
+    paddingTop: 15,
+    paddingBottom: 3
+  },
+  buttonText: {
+    color: 'white',
+    textAlign: 'center'
+  }
 });
